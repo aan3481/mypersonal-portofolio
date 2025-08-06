@@ -23,7 +23,16 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
-        <div className="text-xl font-bold text-teal-400">FarhanDev</div>
+        <a href="#home">
+          <img
+            src="/images/logoo.png"
+            alt="FarhanDev Logo"
+            className="h-12 w-auto ml-8 cursor-pointer"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          />
+        </a>
 
         {/* Tombol hamburger */}
         <div className="md:hidden">
